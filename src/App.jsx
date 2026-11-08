@@ -11,6 +11,7 @@ import Team from "./components/Team";
 import { Contact } from "./components/Contact";
 import CourseDetail from "./pages/CourseDetail";
 import Pengumuman from "./pages/Pengumuman";
+import AdminAnnounce from "./pages/AdminAnnounce";
 import PartnersLogos from "./components/PartnersLogos";
 import Footer from "./components/Footer";
 import "./index.css";
@@ -65,6 +66,11 @@ const App = () => (
       {/* Merged into business-model-canvas — keep old links working */}
       <Route path="/course/communication-sdgs" element={<Navigate to="/course/business-model-canvas" replace />} />
       <Route path="/pengumuman" element={<Pengumuman />} />
+      {/* Hidden admin entry — not linked anywhere public */}
+      <Route path="/announce" element={<AdminAnnounce />} />
+      {/* Old routes redirect to the new admin URL */}
+      <Route path="/login" element={<Navigate to="/announce" replace />} />
+      <Route path="/admin" element={<Navigate to="/announce" replace />} />
     </Routes>
   </Router>
 );
