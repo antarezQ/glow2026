@@ -2,11 +2,19 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
+import ProgramBook from "./components/ProgramBook";
+import { Speakers } from "./components/Speakers";
+import PartnersLogos from "./components/PartnersLogos";
 import "./index.css";
 
 const HomePage = () => (
   <>
     <Hero />
+    <About />
+    <ProgramBook />
+    <Speakers />
+    <PartnersLogos />
   </>
 );
 

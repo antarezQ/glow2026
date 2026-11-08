@@ -1,0 +1,41 @@
+.programbook-section {
+  padding: 80px 0;
+  background: var(--navy-2);
+  border-top: 1px solid var(--border);
+}
+.pb-header { text-align: center; max-width: 600px; margin: 0 auto 40px; }
+.pb-header .section-desc { margin: 0 auto; }
+.pb-alert {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 10px 18px;
+  background: rgba(251,191,36,0.1);
+  border: 1px solid rgba(251,191,36,0.25);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fbbf24;
+}
+.pb-embed {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--navy-3);
+  position: relative;
+}
+.pb-embed iframe {
+  width: 100%;
+  height: 520px;
+  border: none;
+  display: block;
+}
+.pb-download {
+  display: flex;
+  width: fit-content;
+  margin: 20px auto 0;
+}
+@media (max-width: 600px) {
+  .pb-embed iframe { height: 320px; }
+}

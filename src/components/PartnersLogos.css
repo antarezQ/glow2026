@@ -1,0 +1,96 @@
+.partners-section { background: #ffffff; padding: 40px 0 48px; }
+
+.partners-block-label {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0d1b2a;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.partners-block-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(13,27,42,0.15), transparent);
+}
+.partners-block-label--spaced { margin-top: 36px; }
+
+/* Organized By — full width: hosts (2 cols, 1 row), faculties (3 cols, 2 rows).
+   Medium-sized logos: legible without dominating the section. */
+.organized-row { display: grid; gap: 12px; margin-bottom: 12px; }
+.organized-row--hosts { grid-template-columns: repeat(2, 1fr); }
+.organized-row--faculties { grid-template-columns: repeat(3, 1fr); margin-bottom: 12px; }
+.organized-row--faculties:last-child { margin-bottom: 0; }
+.organized-row--supported {
+  grid-template-columns: repeat(2, 1fr);
+}
+.organized-row--supported .organized-logo-card { min-height: 110px; padding: 16px; }
+.organized-row--supported .organized-logo-card img { height: 60px; }
+.organized-row--supported .organized-logo-card--big img { height: 98px; }
+
+.organized-logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #e8edf1;
+  border-radius: 10px;
+  padding: 12px 14px;
+  min-height: 78px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+.organized-logo-card:hover {
+  box-shadow: 0 8px 20px rgba(13, 27, 42, 0.08);
+  transform: translateY(-1px);
+  border-color: rgba(94, 234, 212, 0.5);
+}
+.organized-logo-card img { height: 40px; width: auto; max-width: 100%; object-fit: contain; }
+.organized-logo-card--host { min-height: 88px; }
+.organized-logo-card--host img { height: 46px; }
+
+/* University Partners — 3x3 grid, medium size, matching Organized By proportions */
+.logo-grid--unis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #e8edf1;
+  border-radius: 10px;
+  padding: 12px 14px;
+  min-height: 78px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+.logo-card:hover {
+  box-shadow: 0 8px 20px rgba(13, 27, 42, 0.08);
+  transform: translateY(-1px);
+  border-color: rgba(94, 234, 212, 0.5);
+}
+.logo-grid--unis .logo-card img { height: 36px; width: auto; max-width: 100%; object-fit: contain; }
+
+@media (max-width: 600px) {
+  .organized-row--hosts { grid-template-columns: 1fr; }
+  .organized-row--faculties { grid-template-columns: repeat(2, 1fr); }
+  .organized-row--supported { grid-template-columns: repeat(2, 1fr); }
+  .organized-logo-card { min-height: 64px; padding: 10px; }
+  .organized-logo-card img { height: 30px; }
+  .organized-logo-card--host { min-height: 72px; }
+  .organized-logo-card--host img { height: 34px; }
+  .logo-grid--unis { grid-template-columns: repeat(2, 1fr); }
+  .logo-card { min-height: 64px; padding: 10px; }
+  .logo-grid--unis .logo-card img { height: 28px; }
+}
+
+@media (max-width: 768px) {
+  .partners-section { padding: 32px 0 40px; }
+  .partners-block-label--spaced { margin-top: 26px; margin-bottom: 16px;}
+}
