@@ -10,6 +10,7 @@ import { Gallery } from "./components/Gallery";
 import Team from "./components/Team";
 import { Contact } from "./components/Contact";
 import CourseDetail from "./pages/CourseDetail";
+import Participants from "./pages/Participants";
 import Pengumuman from "./pages/Pengumuman";
 import AdminAnnounce from "./pages/AdminAnnounce";
 import PartnersLogos from "./components/PartnersLogos";
@@ -65,6 +66,7 @@ const App = () => (
       <Route path="/course/:slug" element={<CourseDetail />} />
       {/* Merged into business-model-canvas — keep old links working */}
       <Route path="/course/communication-sdgs" element={<Navigate to="/course/business-model-canvas" replace />} />
+      <Route path="/participants" element={<Participants />} />
       <Route path="/pengumuman" element={<Pengumuman />} />
       {/* Hidden admin entry — not linked anywhere public */}
       <Route path="/announce" element={<AdminAnnounce />} />
