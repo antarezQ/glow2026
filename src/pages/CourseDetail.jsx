@@ -27,8 +27,8 @@ const TN_0409 = "KU3.03.09, 3rd Fl., Tokong Nanas Building";
 const TN_0316 = "KU3.03.16, 3rd Fl., Tokong Nanas Building";
 const TN_0318 = "KU3.03.18, 3rd Fl., Tokong Nanas Building";
 const TN_0319 = "KU3.03.19, 3rd Fl., Tokong Nanas Building";
-const TN_0902 = "KU3.09.02, 3rd Fl., Tokong Nanas Building";
-const TN_0904 = "KU3.09.04, 3rd Fl., Tokong Nanas Building";
+const TN_0902 = "KU3.09.02, 9th Fl., Tokong Nanas Building";
+const TN_0904 = "KU3.09.04, 9th Fl., Tokong Nanas Building";
 
 // Full schedule (SharePoint embed) — shown via the "View Full Schedule" button next to Week 1
 const FULL_SCHEDULE_EMBED_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTz27VkDYVYgyoi3zbGuAjSlmpJWnSJkEE0bmsIR5vsTs5WIVOvBW-eWl3l5_ui9btKOfWv7btpq3pN/pubhtml?widget=true&amp;headers=false";

@@ -46,7 +46,7 @@ function About() {
           <span className="section-label">About the program</span>
           <h2 className="section-title">About <span>GLOW 2026</span></h2>
           <p className="section-desc">
-            Global Learning Week is open for international class students. This year, GLOW runs fully onsite from <strong>6–17 July 2026</strong>, with classes on the 3rd, 8th, and 9th floors of the Tokong Nanas Building, Telkom University.
+            Global Learning Week is open for international class students. This year, GLOW runs fully onsite from <strong>6–17 July 2026</strong>, with classes on the 2nd, 3rd, 8th, and 9th floors of the Tokong Nanas Building, Telkom University.
           </p>
         </div>
 
