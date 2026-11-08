@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { getData } from "country-list";
 import "./Hero.css";
+import { COURSES } from "./Courses";
 
 const TARGET_DATE = new Date("2026-07-06T00:00:00");
 
@@ -24,7 +25,7 @@ const STATS = [
   { num: "1,500+", label: "International Students" },
   { num: "9", label: "Partner Universities" },
   { num: "5", label: "Countries" },
-  { num: "9", label: "Courses" },
+  { num: String(COURSES.length), label: "Courses" },
 ];
 
 function Hero() {

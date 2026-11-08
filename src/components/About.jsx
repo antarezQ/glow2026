@@ -1,4 +1,5 @@
 import "./About.css";
+import { COURSES } from "./Courses";
 
 // Partner universities — ordered to match the international speakers, 3 rows of 3
 const UNIVERSITIES = [
@@ -32,7 +33,7 @@ const HIGHLIGHTS = [
 ];
 
 const FACTS = [
-  { num: "9", label: "Courses available" },
+  { num: String(COURSES.length), label: "Courses available" },
   { num: "9", label: "Visiting professors" },
   { num: "347", label: "Participants" },
   { num: "18", label: "Co-lecturers" },
