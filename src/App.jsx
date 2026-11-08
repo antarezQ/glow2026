@@ -1,10 +1,12 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import ProgramBook from "./components/ProgramBook";
 import { Speakers } from "./components/Speakers";
+import Courses from "./components/Courses";
+import CourseDetail from "./pages/CourseDetail";
 import PartnersLogos from "./components/PartnersLogos";
 import "./index.css";
 
@@ -14,6 +16,7 @@ const HomePage = () => (
     <About />
     <ProgramBook />
     <Speakers />
+    <Courses />
     <PartnersLogos />
   </>
 );
@@ -49,6 +52,9 @@ const App = () => (
     <ScrollToHash />
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/course/:slug" element={<CourseDetail />} />
+      {/* Merged into business-model-canvas — keep old links working */}
+      <Route path="/course/communication-sdgs" element={<Navigate to="/course/business-model-canvas" replace />} />
     </Routes>
   </Router>
 );
