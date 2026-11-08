@@ -1,10 +1,12 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 import "./index.css";
 
 const HomePage = () => (
   <>
-    <main />
+    <Hero />
   </>
 );
 
@@ -35,6 +37,7 @@ function ScrollToHash() {
 
 const App = () => (
   <Router>
+    <Navbar />
     <ScrollToHash />
     <Routes>
       <Route path="/" element={<HomePage />} />
