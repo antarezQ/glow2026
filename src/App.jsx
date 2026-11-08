@@ -6,8 +6,12 @@ import About from "./components/About";
 import ProgramBook from "./components/ProgramBook";
 import { Speakers } from "./components/Speakers";
 import Courses from "./components/Courses";
+import { Gallery } from "./components/Gallery";
+import Team from "./components/Team";
+import { Contact } from "./components/Contact";
 import CourseDetail from "./pages/CourseDetail";
 import PartnersLogos from "./components/PartnersLogos";
+import Footer from "./components/Footer";
 import "./index.css";
 
 const HomePage = () => (
@@ -17,7 +21,11 @@ const HomePage = () => (
     <ProgramBook />
     <Speakers />
     <Courses />
+    <Gallery />
+    <Team />
+    <Contact />
     <PartnersLogos />
+    <Footer />
   </>
 );
 
