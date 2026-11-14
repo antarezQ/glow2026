@@ -1,4 +1,4 @@
-# GLOW 2026 — Global Learning Week
+# GLOW 2026 : Global Learning Week
 
 Official event website for **GLOW 2026 (Global Learning Week)**, a two-week, credit-earning international academic program held at Telkom University, Bandung (6–17 July 2026). Visiting professors from partner universities teach alongside Telkom University co-lecturers, and students earn 2–4 academic credits.
 
@@ -43,7 +43,7 @@ The site gives participants one place to find the program overview, speakers, co
 Requirements: Node.js 18 or newer and npm.
 
 ```bash
-git clone https://github.com/<your-username>/glow2026.git
+git clone https://github.com/<antarezQ>/glow2026.git
 cd glow2026
 npm install
 ```
